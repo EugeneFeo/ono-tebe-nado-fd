@@ -237,23 +237,55 @@
 /* Секция About */
 
 .about {
+  width: 1052px;
+  padding: 120px 24px 180px 24px;
+}
 
+.about-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 72px;
 }
 
 .about-logo {
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 47px;
+  margin-top: -85px;
+}
 
+.about-logo-image {
+  width: 148px;
+  height: 114px;
 }
 
 .about-description {
-
+  width: 693px;
 }
 
-.about-description-header {
-
+.about-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 100px;
+  margin-top: 15px;
 }
 
-.about-description-article {
+.about-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+}
 
+.about-text-up {
+  margin-bottom: 24px;
 }
 
 /* Подвал документа */
