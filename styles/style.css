@@ -23,6 +23,7 @@
 }
 
 .header-menu-item {
+  font-style: 'Raleway', sans-serif;
   list-style: circle;
   font-weight: 400;
   font-size: 18px;
@@ -51,17 +52,15 @@
   height: 105px;
 }
 
-.address {
-  justify-self: end;
-}
-
 .header-address {
+  font-style: 'Raleway', sans-serif;
   max-width: 240px;
   font-size: 18px;
   font-weight: 400;
   line-height: 135%;
   color: #000;
   font-style: normal;
+  justify-self: end;
 }
 
 /* Секция Cover */
@@ -87,6 +86,7 @@
 }
 
 .cover-title {
+  font-style: 'Raleway', sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -122,6 +122,7 @@
 }
 
 .cover-description-item {
+  font-style: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 127%;
@@ -131,6 +132,7 @@
 }
 
 .cover-description-button {
+  font-style: 'Raleway', sans-serif;
   text-transform: uppercase;
   width: 256px;
   height: 51px;
@@ -151,6 +153,7 @@
 
 
 .lots-heading {
+  font-style: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -205,6 +208,7 @@
 }
 
 .card-title {
+  font-style: 'Raleway', sans-serif;
   width: 254px;
   z-index: 2;
   font-weight: 700;
@@ -216,6 +220,7 @@
 }
 
 .card-text {
+  font-style: 'Raleway', sans-serif;
   z-index: 2;
   font-weight: 400;
   font-size: 20px;
@@ -225,6 +230,7 @@
 }
 
 .lots-look-more-link {
+  font-style: 'Raleway', sans-serif;
   display: block;
   font-weight: 400;
   font-size: 20px;
@@ -268,6 +274,7 @@
 }
 
 .about-title {
+  font-style: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -277,6 +284,7 @@
 }
 
 .about-text {
+  font-style: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -298,6 +306,7 @@
 }
 
 .footer-address {
+  font-style: 'Raleway', sans-serif;
   width: 264px;
   font-size: 18px;
   font-weight: 400;
@@ -320,6 +329,7 @@
 }
 
 .footer-menu-list-item {
+  font-style: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
