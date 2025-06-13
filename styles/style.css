@@ -11,9 +11,6 @@
   padding: 92px 50px;
 }
 
-.header-menu { 
-}
-
 .header-menu-list {
   width: 392px;
   height: 22px;
@@ -317,9 +314,6 @@
   margin-bottom: 82px;
 }
 
-.footer-menu {
-}
-
 .footer-menu-list {
   list-style-type: none;
   padding-left: 0;
@@ -354,10 +348,4 @@
 .footer-social-list-item {
   width: 48px;
   height: 48px;
-}
-
-.footer-social-link {
-}
-
-.footer-social-icon {
 }
