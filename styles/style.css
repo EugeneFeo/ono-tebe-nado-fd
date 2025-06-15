@@ -2,6 +2,22 @@
   background-color: #ffffff;
 }
 
+.address {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #000;
+  font-style: normal;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
 /* Шапка документа */
 
 .header {
@@ -13,14 +29,13 @@
 
 .header-menu-list {
   width: 392px;
-  height: 22px;
   display: flex;
   gap: 32px;
   margin-bottom: 3px;
 }
 
 .header-menu-item {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   list-style: circle;
   font-weight: 400;
   font-size: 18px;
@@ -32,7 +47,7 @@
   padding-left: 0;
 }
 
-.header-menu-link-noline {
+.header-menu-link-active {
   text-decoration: none;
 }
 
@@ -50,46 +65,36 @@
 }
 
 .header-address {
-  font-style: 'Raleway', sans-serif;
   max-width: 240px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 135%;
-  color: #000;
   justify-self: end;
 }
 
 /* Секция Cover */
 
 .cover {
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 165px 50px 50px 50px;
   position: relative;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 .cover-content {
-  position: relative;
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 106px;
 }
 
 .cover-title {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  padding: 165px 50px 207px 50px;
+  z-index: 1;
 }
 
 .aligned-text {
@@ -111,14 +116,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  right: 50px;
+  z-index: 1;
 }
 
-.cover-description-item {
-  font-style: 'Raleway', sans-serif;
+.cover-description-text {
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 127%;
@@ -128,15 +130,15 @@
 }
 
 .cover-description-button {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  width: 256px;
-  height: 51px;
+  padding: 12px 32px;
   font-weight: 500;
   font-size: 22px;
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 
 /* Секция с карточками */
@@ -145,9 +147,8 @@
   padding: 180px 24px 120px 24px;
 }
 
-
 .lots-heading {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -163,6 +164,7 @@
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -175,20 +177,21 @@
 }
 
 .card-type-film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card-type-book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card-type-picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card-content-container {
@@ -202,9 +205,9 @@
 }
 
 .card-title {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   width: 254px;
-  z-index: 2;
+  z-index: 1;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -214,8 +217,8 @@
 }
 
 .card-text {
-  font-style: 'Raleway', sans-serif;
-  z-index: 2;
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -224,7 +227,7 @@
 }
 
 .lots-look-more-link {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: block;
   font-weight: 400;
   font-size: 20px;
@@ -237,7 +240,7 @@
 
 .about {
   width: 1052px;
-  padding: 120px 24px 180px 24px;
+  margin: 0 24px 180px 24px;
 }
 
 .about-column {
@@ -255,7 +258,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 47px;
-  margin-top: -85px;
+  margin-top: 35px;
 }
 
 .about-logo-image {
@@ -264,11 +267,12 @@
 }
 
 .about-description {
-  width: 680px;
+  width: 693px;
+  margin-top: 122px;
 }
 
 .about-title {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -278,15 +282,16 @@
 }
 
 .about-text {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #000;
+  margin-bottom: 24px;
 }
 
-.about-text-up {
-  margin-bottom: 24px;
+.about-text:last-child {
+  margin-bottom: 0;
 }
 
 /* Подвал документа */
@@ -300,12 +305,7 @@
 }
 
 .footer-address {
-  font-style: 'Raleway', sans-serif;
-  width: 264px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 135%;
-  color: #000;
+  max-width: 264px;
   padding-top: 2px;
   margin-bottom: 82px;
 }
@@ -319,7 +319,7 @@
 }
 
 .footer-menu-list-item {
-  font-style: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
